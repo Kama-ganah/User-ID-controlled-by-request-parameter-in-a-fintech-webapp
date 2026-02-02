@@ -1,7 +1,7 @@
 # Overview
 During testing of the user account functionality, a medium-severity horizontal privilege escalation vulnerability was identified. The application relied on a request parameter (id) to determine which user’s account information to display, but failed to enforce proper authorization checks. By modifying this parameter, an authenticated user was able to access another user’s account details, including sensitive information like API keys, demonstrating insufficient access control.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Logged in with valid user credentials and navigated to the My Account page.
 
